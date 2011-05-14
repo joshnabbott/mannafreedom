@@ -90,6 +90,65 @@ body {
   background-color: #cacaca;
   background-image: url("../images/css/bg-body.jpg");
   background-position: 0 0;
+  font: 13px/1.231 sans-serif;
+  font-family: Arial;
+}
+
+select,
+input,
+textarea,
+button {
+  font: 99% sans-serif;
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, sans-serif;
+}
+
+body,
+select,
+input,
+textarea {
+  color: #444;
+  font-family: Arial, sans-serif;;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+
+a:hover,
+a:active {
+  outline: none;
+}
+
+a,
+a:active,
+a:visited {
+  color: #607890;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #036;
+}
+
+ul,
+ol {
+  margin-left: 1.8em;
+}
+
+ol {
+  list-style-type: decimal;
 }
 
 div#container {
@@ -104,7 +163,10 @@ div#container {
   Header
 */
 div#container div#header {
-  background: transparent url("../images/css/bg-header.jpg") no-repeat 0 0;
+  background: #f8f8f8 url("../images/css/bg-header.jpg") no-repeat 0 0;
+  border-color: #e8e7e7;
+  border-style: solid;
+  border-width: 0 1px;
   height: 145px;
 }
 
@@ -115,7 +177,7 @@ div#container div#header div#login {
 }
 
 div#container div#header h1 a {
-  background-image: url("../images/css/logo.png");
+  background-image: url("../images/css/logo-large.png");
   background-position: 0 center;
   background-repeat: none;
   height: 78px;
@@ -150,9 +212,56 @@ div#container div#main-navigation {
 div#container div#main-navigation ul {
   list-style-type: none;
   height: 50px;
+  line-height: 50px;
 }
 
 div#container div#main-navigation ul li {
   float: left;
   margin-left: 54px;
+}
+
+div#container div#main-navigation ul li,
+div#container div#main-navigation ul li a {
+  color: #fff;
+  font-size: 16px;
+  text-shadow: #2f6db2 1px 1px;
+}
+
+/*
+  Main Callouts section (Home page)
+*/
+div#container div#callouts-container {
+  background-image: url("../images/css/bg-callouts-content.jpg");
+  background-position: bottom 0;
+  background-repeat: repeat-x;
+  border-color: #e8e7e7;
+  border-style: solid;
+  border-width: 0 1px;
+  overflow: auto;
+}
+
+div#container div#callouts-container div#callouts-content {
+  margin: 21px auto 37px auto;
+  width: 939px;
+}
+
+div#container div#callouts-container div#callouts-content div.callout {
+  background-color: yellow;
+  float: left;
+  margin: 0 49px 0 0;
+  width: 280px;
+}
+
+div#container div#callouts-container div#callouts-content div.callout.last {
+  margin: 0;
+}
+
+/*
+  Footer
+*/
+div#container div#footer {
+  background-image: url("../images/css/bg-footer.jpg");
+  background-position: 0 0;
+  background-repeat: repeat-x;
+
 }

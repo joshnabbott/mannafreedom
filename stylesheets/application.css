@@ -1,3 +1,9 @@
+/*
+  Style guide
+  Blue: 
+  Light gray: #f8f8f8;
+*/
+
 /* HTML5 Boilerplate */
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -87,11 +93,12 @@ input, select {
 /* END RESET CSS */
 
 body {
-  background-color: #cacaca;
+  background-color: #f8f8f8;
   background-image: url("../images/css/bg-body.jpg");
   background-position: 0 0;
-  font: 13px/1.231 sans-serif;
   font-family: Arial;
+  /* For pixel -> percent conversion sizes - http://developer.yahoo.com/yui/3/cssfonts/ */
+  font-size: 85%;
 }
 
 select,
@@ -113,7 +120,8 @@ select,
 input,
 textarea {
   color: #444;
-  font-family: Arial, sans-serif;;
+  font-family: Arial, sans-serif;
+  line-height: 150%;
 }
 
 h1,
@@ -130,15 +138,19 @@ a:active {
   outline: none;
 }
 
+a {
+  color: #444;
+}
+
 a,
 a:active,
 a:visited {
-  color: #607890;
   text-decoration: none;
 }
 
 a:hover {
-  color: #036;
+  color: #444;
+  text-decoration: underline;
 }
 
 ul,
@@ -148,6 +160,10 @@ ol {
 
 ol {
   list-style-type: decimal;
+}
+
+.hidden {
+  display: none;
 }
 
 .left {
@@ -167,11 +183,58 @@ ol {
 }
 
 /*
+  Buttons, and other various customizations
+*/
+div.button {
+  color: #fff;
+}
+
+div.button a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+div.button a:hover,
+div.button a:active {
+  text-decoration: none;
+}
+
+div.button.small {
+  background: url("../images/css/button-left-small.png") no-repeat left center;
+  height: 28px;
+  line-height: 28px;
+}
+
+div.button.small a {
+  color: #fff;
+  display: block;
+  height: 28px;
+  line-height: 30px;
+  margin: 0 auto;
+  padding: 0 17px;
+}
+
+div.button.small.gray a {
+  background: url("../images/css/button-right-small-gray.png") no-repeat right center;
+}
+
+div.button.small.gray.arrow a {
+  background: url("../images/css/button-right-small-arrow-gray.png") no-repeat right center;
+}
+
+div.button.small.white a {
+  background: url("../images/css/button-right-small-white.png") no-repeat right center;
+}
+
+div.button.small.white.arrow a {
+  background: url("..images/css/button-right-small-arrow-white.png") no-repeat right center;
+}
+
+/*
   Container
 */
 div#container {
   background-color: #fff;
-  height: 3000px;
   margin: 0 auto;
   position: relative;
   width: 1021px;
@@ -195,7 +258,7 @@ div#container div#header div#login {
 }
 
 div#container div#header h1 a {
-  background-image: url("../images/css/logo-large.png");
+  background-image: url("../images/logo-large.png");
   background-position: 0 center;
   background-repeat: none;
   height: 78px;
@@ -245,10 +308,23 @@ div#container div#main-navigation ul li a {
   text-shadow: #2f6db2 1px 1px;
 }
 
+div#container div#main-navigation ul li a:hover,
+div#container div#main-navigation ul li a:active {
+  text-decoration: none;
+}
+
+/*
+  Main navigation subnav
+*/
+div#container div#main-navigation ul li ul {
+  display: none;
+}
+
 /*
   Main Callouts section (Home page)
 */
 div#container div#callouts-container {
+  background-color: #f7f7f7;
   background-image: url("../images/css/bg-callouts-content.jpg");
   background-position: bottom 0;
   background-repeat: repeat-x;
@@ -256,6 +332,7 @@ div#container div#callouts-container {
   border-style: solid;
   border-width: 0 1px;
   overflow: auto;
+  padding-bottom: 37px;
 }
 
 div#container div#callouts-container div#callouts-content {
@@ -264,9 +341,9 @@ div#container div#callouts-container div#callouts-content {
 }
 
 div#container div#callouts-container div#callouts-content div.callout {
-  background-color: yellow;
   float: left;
   margin: 0 49px 0 0;
+  text-align: center;
   width: 280px;
 }
 
@@ -274,12 +351,187 @@ div#container div#callouts-container div#callouts-content div.callout.last {
   margin: 0;
 }
 
+div#container div#callouts-container div#callouts-content div.callout img {
+  display: block;
+  margin-bottom: 10px;
+}
+
+div#container div#callouts-container div#callouts-content div.callout p {
+  display: block;
+}
+
+div#container div#callouts-container div#callouts-content div.callout div.button {
+  margin: 25px auto 0 auto;
+  width: 125px;
+}
+
+/*
+  Main content
+*/
+div#container div#content {
+  padding: 30px;
+}
+
 /*
   Footer
 */
 div#container div#footer {
+  background-color: #f8f8f8;
   background-image: url("../images/css/bg-footer.jpg");
   background-position: 0 0;
   background-repeat: repeat-x;
-
+  border-color: #e8e7e7;
+  border-style: solid;
+  border-width: 0 1px;
+  font-size: 90%;
+  padding: 20px 32px 20px 50px;
+  overflow: auto;
 }
+
+div#container div#footer div#columns {
+  overflow: hidden;
+  width: 100%;
+}
+
+div#container div#footer div.column {
+  float: left;
+  position: relative;
+}
+
+div#container div#footer div#column_one {
+  margin-right: 50px;
+  width: 154px;
+}
+
+div#container div#footer div#column_one dl {
+  margin: 22px 0 80px 0;
+}
+
+div#container div#footer div#column_one dl dt {
+  float: left;
+  margin: 0 7px 0 0;
+}
+
+div#container div#footer div#column_two {
+  margin-right: 20px;
+  width: 120px;
+}
+
+div#container div#footer div#column_three {
+  margin-right: 40px;
+  width: 120px;
+}
+
+div#container div#footer div#column_four {
+  margin-right: 50px;
+  width: 170px;
+}
+
+div#container div#footer div#column_four ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+div#container div#footer div#column_four ul li {
+  margin-bottom: 25px;
+}
+
+div#container div#footer div#column_four ul li:last-child {
+  margin: 0;
+}
+
+div#container div#footer div#column_four ul li p:nth-child(2) {
+  font-size: 90%;
+}
+
+div#container div#footer div#column_five {
+  width: 180px;
+}
+
+div#container div#footer div#column_five ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+}
+
+div#container div#footer div#column_five ul li {
+  float: left;
+  margin-right: 4px;
+}
+
+div#container div#footer div#column_five ul li:last-child {
+  margin: 0;
+}
+
+div#container div#footer div#column_five ul li a {
+  display: block;
+  height: 32px;
+  text-indent: -3000px;
+  width: 32px;
+}
+
+div#container div#footer div#column_five ul li:first-child a {
+  background: url("../images/css/sprite-social-networking.jpg") no-repeat 0 0;
+}
+
+div#container div#footer div#column_five ul li:nth-child(2) a {
+  background: url("../images/css/sprite-social-networking.jpg") no-repeat -32px 0;
+}
+
+div#container div#footer div#column_five ul li:nth-child(3) a {
+  background: url("../images/css/sprite-social-networking.jpg") no-repeat -64px 0;
+}
+
+div#container div#footer div#column_five ul li:nth-child(4) a {
+  background: url("../images/css/sprite-social-networking.jpg") no-repeat -96px 0;
+}
+
+div#container div#footer div#column_five ul li:nth-child(5) a {
+  background: url("../images/css/sprite-social-networking.jpg") no-repeat -128px 0;
+}
+
+div#container div#footer div#column_five form {
+}
+
+div#container div#footer div#column_five form fieldset {
+  clear: both;
+  width: 100%;
+}
+
+div#container div#footer div#column_five form fieldset input[type="text"] {
+  margin: 0 0 10px 0;
+  width: 99%;
+}
+
+div#container div#footer div#column_five form div#commit {
+  float: right;
+  width: 100px;
+}
+
+div#container div#footer div#column_two h3,
+div#container div#footer div#column_three h3,
+div#container div#footer div#column_four h3,
+div#container div#footer div#column_five h3 {
+  height: 50px;
+  line-height: 50px;
+}
+
+div#container div#footer div.column h3 a {
+  text-decoration: none;
+}
+
+div#container div#footer div#column_two ul,
+div#container div#footer div#column_three ul {
+  list-style-image: url("../images/css/bullet-arrow.png");
+}
+
+div#container div#footer div#column_two ul li,
+div#container div#footer div#column_three ul li {
+  line-height: 105%;
+}
+
+div#container div#footer p#copyright {
+  clear: both;
+  margin: 50px 0 0 0;
+}
+

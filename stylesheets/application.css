@@ -1,6 +1,6 @@
 /*
   Style guide
-  Blue: 
+  Blue: #3c89e0
   Light gray: #f8f8f8;
 */
 
@@ -240,6 +240,15 @@ div#container {
   width: 1021px;
 }
 
+div#container div.columns {
+  overflow: hidden;
+}
+
+div#container div.column {
+  float: left;
+  position: relative;
+}
+
 /*
   Header
 */
@@ -362,14 +371,72 @@ div#container div#callouts-container div#callouts-content div.callout p {
 
 div#container div#callouts-container div#callouts-content div.callout div.button {
   margin: 25px auto 0 auto;
-  width: 125px;
+  width: 150px;
 }
 
 /*
   Main content
 */
 div#container div#content {
-  padding: 30px;
+  background-color: #f8f8f8;
+  border-color: #e8e7e7;
+  border-style: solid;
+  border-width: 0 1px;
+}
+
+div#container div#column-one {
+  background-color: #fff;
+  border-color: #e8e7e7;
+  border-style: solid;
+  border-width: 0 1px 0 0;
+  margin: 0 1px 0 0;
+  padding: 40px;
+  width: 616px;
+}
+
+div#container div#column-one p {
+  margin: 0 0 20px 0;
+}
+
+div#container div#content div#column-two {
+  border-color: #e8e7e7;
+  border-style: solid;
+  border-width: 0 1px;
+  margin: 0 1px 0 0;
+  width: 318px;
+}
+
+div#container div#content div#column-two div#sub-one {
+  background-color: #fff;
+  overflow: auto;
+}
+
+div#container div#content div#column-two div#sub-one h3 {
+  background-color: #3c89e0;
+  color: #fff;
+  height: 56px;
+  line-height: 56px;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+div#container div#content div#column-two div#sub-one div.content {
+  padding: 25px;
+}
+
+div#container div#content div#column-two div#sub-one div.content p {
+  margin: 0 0 25px 0;
+}
+
+div#container div#content div#column-two div#sub-one div.button {
+  float: right;
+  margin: 0 0 15px 0;
+  width: 130px;
+}
+
+div#container div#content div#column-two div#sub-two {
+  padding: 35px 20px;
 }
 
 /*
@@ -388,14 +455,10 @@ div#container div#footer {
   overflow: auto;
 }
 
-div#container div#footer div#columns {
-  overflow: hidden;
-  width: 100%;
+div#container div#footer div.columns {
 }
 
 div#container div#footer div.column {
-  float: left;
-  position: relative;
 }
 
 div#container div#footer div#column_one {

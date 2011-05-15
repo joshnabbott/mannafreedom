@@ -125,7 +125,6 @@ h6 {
   font-weight: bold;
 }
 
-
 a:hover,
 a:active {
   outline: none;
@@ -151,6 +150,25 @@ ol {
   list-style-type: decimal;
 }
 
+.left {
+  float: left;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.right {
+  float: right;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/*
+  Container
+*/
 div#container {
   background-color: #fff;
   height: 3000px;

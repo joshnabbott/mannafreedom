@@ -303,11 +303,13 @@ div#container div#main-navigation ul {
   list-style-type: none;
   height: 50px;
   line-height: 50px;
+  position: relative;
 }
 
 div#container div#main-navigation ul li {
   float: left;
   margin-left: 54px;
+  position: relative;
 }
 
 div#container div#main-navigation ul li,
@@ -319,14 +321,62 @@ div#container div#main-navigation ul li a {
 
 div#container div#main-navigation ul li a:hover,
 div#container div#main-navigation ul li a:active {
+  color: #fdc689;
   text-decoration: none;
 }
 
 /*
-  Main navigation subnav
+  Main navigation dropdown subnav
 */
 div#container div#main-navigation ul li ul {
   display: none;
+  left: -13px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 220px;
+  z-index: 999;
+}
+
+div#container div#main-navigation ul li ul li {
+  background-color: #3c89e0;
+  height: 40px;
+  line-height: 40px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+div#container div#main-navigation ul li ul li:first-child {
+  background-image: url("/images/css/bg-subnav-first-child.jpg");
+  background-position: center 0;
+  background-repeat: no-repeat;
+}
+
+div#container div#main-navigation ul li ul li a {
+  display: block;
+  font-size: 90%;
+  font-weight: normal;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 13px;
+  text-shadow: 0;
+}
+
+div#container div#main-navigation ul li ul li a:link,
+div#container div#main-navigation ul li ul li a:visited {
+}
+
+div#container div#main-navigation ul li ul li a:hover,
+div#container div#main-navigation ul li ul li a:active {
+  background-color: #449cff;
+  background-image: url("/images/css/bg-subnav-link-hover.jpg");
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+div#container div#main-navigation ul li:hover ul {
+  display: block;
 }
 
 /*

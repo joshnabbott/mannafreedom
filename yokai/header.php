@@ -70,19 +70,47 @@
     <div id="main-navigation">
       <ul>
         <li><a href="/home/" class="uppercase">Home</a></li>
-        <li><a href="/about/" class="uppercase">About</a></li>
-        <li><a href="/get-informed/" class="uppercase">Get Informed</a></li>
-        <li><a href="/intervene/" class="uppercase">Intervene</a>
+
+        <li><a href="/about/" class="uppercase">About</a>
           <ul>
-            <li><a href="" class="uppercase">Overview</a></li>
-            <li><a href="" class="uppercase">Tell Others</a></li>
-            <li><a href="" class="uppercase">Awareness Fundraisers</a></li>
-            <li><a href="" class="uppercase">Trips</a></li>
-            <li><a href="" class="uppercase">Donate Now</a></li>
+            <li><a href="/about/purpose/" class="uppercase">Purpose</a></li>
+            <li><a href="/about/goals/" class="uppercase">Goals</a></li>
+            <li><a href="/about/affiliations/" class="uppercase">Affiliations</a></li>
+            <li><a href="/about/financial/" class="uppercase">Financial</a></li>
           </ul>
         </li>
-        <li><a href="/news/" class="uppercase">News</a></li>
-        <li><a href="/blog/" class="uppercase">Blog</a></li>
-        <li><a href="http://store.mannafreedom.com/" class="uppercase">Store</a></li>
+
+        <li><a href="/get-informed/" class="uppercase">Get Informed</a>
+          <ul>
+            <li><a href="/get-informed/what-is-human-trafficking/" class="uppercase">What is human trafficking?</a></li>
+            <li><a href="/get-informed/survivor-stories-videos/" class="uppercase">Survivor Stories &amp; Videos</a></li>
+            <li><a href="/get-informed/faq/" class="uppercase">FAQ</a></li>
+            <li><a href="/get-informed/resource-center/" class="uppercase">Resource Center</a></li>
+          </ul>
+        </li>
+
+        <li><a href="/intervene/" class="uppercase">Intervene</a>
+          <ul>
+            <li><a href="/intervene/tell-others/" class="uppercase">Tell Others</a></li>
+            <li><a href="/intervene/awareness-fundraiser-events/" class="uppercase">Awareness &amp; Fundraiser Events</a></li>
+            <li><a href="/intervene/donate/" class="uppercase">Donate</a></li>
+            <li><a href="/intervene/trips/" class="uppercase">Trips</a></li>
+          </ul>
+        </li>
+
+        <li><a href="/news/" class="uppercase">News</a>
+          <ul>
+            <li><a href="/news/fight4freedom/" class="uppercase">Fight4Freedom</a></li>
+            <li><a href="/news/bridge-to-life-homes/" class="uppercase">Bridge to Life Homes</a></li>
+            <li><a href="/news/tap-teen-awareness-programs/" class="uppercase">TAP (Teen Awareness Programs)</a></li>
+            <li><a href="/news/share-your-story/" class="uppercase">Share your story</a></li>
+          </ul>
+        </li>
+
+        <li><a href="/blog/" class="uppercase">Blog</a>
+        </li>
+
+        <li><a href="http://store.mannafreedom.com/" class="uppercase">Store</a>
+        </li>
       </ul>
     </div>

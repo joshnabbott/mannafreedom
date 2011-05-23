@@ -3,8 +3,8 @@
  * The template for displaying attachments.
  *
  * @package WordPress
- * @subpackage Twenty_Ten
- * @since Twenty Ten 1.0
+ * @subpackage Yokai
+ * @since Yokai
  */
 
 get_header(); ?>

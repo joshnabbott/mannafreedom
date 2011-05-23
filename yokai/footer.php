@@ -6,8 +6,8 @@
  * after.  Calls sidebar-footer.php for bottom widgets.
  *
  * @package WordPress
- * @subpackage Twenty_Ten
- * @since Twenty Ten 1.0
+ * @subpackage Yokai
+ * @since Yokai
  */
 ?>
 	</div><!-- #main -->

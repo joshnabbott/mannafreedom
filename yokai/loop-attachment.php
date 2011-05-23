@@ -10,7 +10,7 @@
  * This can be overridden in child themes with loop-attachment.php.
  *
  * @package WordPress
- * @subpackage Twenty_Ten
+ * @subpackage Yokai
  * @since Twenty Ten 1.2
  */
 ?>

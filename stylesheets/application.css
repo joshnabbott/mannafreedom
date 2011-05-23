@@ -436,6 +436,9 @@ div#container div#content div#column-two div#sub-one div.button {
 }
 
 div#container div#content div#column-two div#sub-two {
+  border-color: #e8e7e7;
+  border-style: solid;
+  border-width: 1px 0 0 0;
   padding: 35px 20px;
 }
 

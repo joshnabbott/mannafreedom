@@ -94,7 +94,7 @@ input, select {
 
 body {
   background-color: #f8f8f8;
-  background-image: url("../images/css/bg-body.jpg");
+  background-image: url("/images/css/bg-body.jpg");
   background-position: 0 0;
   font-family: Arial;
   /* For pixel -> percent conversion sizes - http://developer.yahoo.com/yui/3/cssfonts/ */
@@ -200,7 +200,7 @@ div.button a:active {
 }
 
 div.button.small {
-  background: url("../images/css/button-left-small.png") no-repeat left center;
+  background: url("/images/css/button-left-small.png") no-repeat left center;
   height: 28px;
   line-height: 28px;
 }
@@ -215,15 +215,15 @@ div.button.small a {
 }
 
 div.button.small.gray a {
-  background: url("../images/css/button-right-small-gray.png") no-repeat right center;
+  background: url("/images/css/button-right-small-gray.png") no-repeat right center;
 }
 
 div.button.small.gray.arrow a {
-  background: url("../images/css/button-right-small-arrow-gray.png") no-repeat right center;
+  background: url("/images/css/button-right-small-arrow-gray.png") no-repeat right center;
 }
 
 div.button.small.white a {
-  background: url("../images/css/button-right-small-white.png") no-repeat right center;
+  background: url("/images/css/button-right-small-white.png") no-repeat right center;
 }
 
 div.button.small.white.arrow a {
@@ -253,7 +253,7 @@ div#container div.column {
   Header
 */
 div#container div#header {
-  background: #f8f8f8 url("../images/css/bg-header.jpg") no-repeat 0 0;
+  background: #f8f8f8 url("/images/css/bg-header.jpg") no-repeat 0 0;
   border-color: #e8e7e7;
   border-style: solid;
   border-width: 0 1px;
@@ -267,7 +267,7 @@ div#container div#header div#login {
 }
 
 div#container div#header h1 a {
-  background-image: url("../images/logo-large.png");
+  background-image: url("/images/logo-large.png");
   background-position: 0 center;
   background-repeat: none;
   height: 78px;
@@ -278,7 +278,7 @@ div#container div#header h1 a {
 }
 
 div#container div#header div#get-help a {
-  background-image: url("../images/css/button-get-help.jpg");
+  background-image: url("/images/css/button-get-help.jpg");
   background-position: 0 0;
   background-repeat: none;
   display: block;
@@ -333,8 +333,7 @@ div#container div#main-navigation ul li ul {
   Breadcrumbs
 */
 div#container div#breadcrumbs {
-  background: transparent url("../images/css/bg-breadcrumbs.jpg") no-repeat 0 0;
-  display: none;
+  background: transparent url("/images/css/bg-breadcrumbs.jpg") no-repeat 0 0;
   height: 26px;
   line-height: 26px;
   padding: 0 0 0 60px;
@@ -362,7 +361,7 @@ div#container div#breadcrumbs ul li a {
 */
 div#container div#callouts-container {
   background-color: #f7f7f7;
-  background-image: url("../images/css/bg-callouts-content.jpg");
+  background-image: url("/images/css/bg-callouts-content.jpg");
   background-position: bottom 0;
   background-repeat: repeat-x;
   border-color: #e8e7e7;
@@ -475,7 +474,7 @@ div#container div#content div#column-two div#sub-two {
 */
 div#container div#footer {
   background-color: #f8f8f8;
-  background-image: url("../images/css/bg-footer.jpg");
+  background-image: url("/images/css/bg-footer.jpg");
   background-position: 0 0;
   background-repeat: repeat-x;
   border-color: #e8e7e7;
@@ -565,23 +564,23 @@ div#container div#footer div#column_five ul li a {
 }
 
 div#container div#footer div#column_five ul li:first-child a {
-  background: url("../images/css/sprite-social-networking.jpg") no-repeat 0 0;
+  background: url("/images/css/sprite-social-networking.jpg") no-repeat 0 0;
 }
 
 div#container div#footer div#column_five ul li:nth-child(2) a {
-  background: url("../images/css/sprite-social-networking.jpg") no-repeat -32px 0;
+  background: url("/images/css/sprite-social-networking.jpg") no-repeat -32px 0;
 }
 
 div#container div#footer div#column_five ul li:nth-child(3) a {
-  background: url("../images/css/sprite-social-networking.jpg") no-repeat -64px 0;
+  background: url("/images/css/sprite-social-networking.jpg") no-repeat -64px 0;
 }
 
 div#container div#footer div#column_five ul li:nth-child(4) a {
-  background: url("../images/css/sprite-social-networking.jpg") no-repeat -96px 0;
+  background: url("/images/css/sprite-social-networking.jpg") no-repeat -96px 0;
 }
 
 div#container div#footer div#column_five ul li:nth-child(5) a {
-  background: url("../images/css/sprite-social-networking.jpg") no-repeat -128px 0;
+  background: url("/images/css/sprite-social-networking.jpg") no-repeat -128px 0;
 }
 
 div#container div#footer div#column_five form {
@@ -616,7 +615,7 @@ div#container div#footer div.column h3 a {
 
 div#container div#footer div#column_two ul,
 div#container div#footer div#column_three ul {
-  list-style-image: url("../images/css/bullet-arrow.png");
+  list-style-image: url("/images/css/bullet-arrow.png");
 }
 
 div#container div#footer div#column_two ul li,

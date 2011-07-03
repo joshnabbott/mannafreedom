@@ -1,0 +1,60 @@
+<head>
+	%%GLOBAL_OptimizerControlScript%%
+
+	<title>%%Page.WindowTitle%%</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=%%GLOBAL_CharacterSet%%" />
+	<meta name="description" content="%%Page.MetaDescription%%" />
+	<meta name="keywords" content="%%Page.MetaKeywords%%" />
+	%%GLOBAL_AdditionalMetaTags%%
+	%%Page.CanonicalLink%%
+	%%Page.Robots%%
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<link rel="shortcut icon" href="%%GLOBAL_Favicon%%" />
+
+	<!-- begin: js page tag -->
+	<script language="javascript" type="text/javascript">//<![CDATA[
+		(function(){
+			// this happens before external dependencies (and dom ready) to reduce page flicker
+			var node, i;
+			for (i = window.document.childNodes.length; i--;) {
+				node = window.document.childNodes[i];
+				if (node.nodeName == 'HTML') {
+					node.className += ' javascript';
+				}
+			}
+		})();
+	//]]></script>
+	<!-- end: js page tag -->
+
+	%%GLOBAL_Stylesheets%%
+
+	<!-- Tell the browsers about our RSS feeds -->
+	%%GLOBAL_HeadRSSLinks%%
+
+	<!-- Include visitor tracking code (if any) -->
+	%%GLOBAL_TrackingCode%%
+
+	%%GLOBAL_DesignModeStyleSheet%%
+
+	%%GLOBAL_HeaderImageStyle%%
+
+	<script type="text/javascript" src="%%GLOBAL_ShopPath%%/javascript/jquery.js?%%GLOBAL_JSCacheToken%%"></script>
+	<script type="text/javascript" src="%%GLOBAL_ShopPath%%/javascript/menudrop.js?%%GLOBAL_JSCacheToken%%"></script>
+	<script type="text/javascript" src="%%GLOBAL_ShopPath%%/javascript/common.js?%%GLOBAL_JSCacheToken%%"></script>
+	<script type="text/javascript" src="%%GLOBAL_ShopPath%%/javascript/iselector.js?%%GLOBAL_JSCacheToken%%"></script>
+
+	<script type="text/javascript">
+	//<![CDATA[
+	config.ShopPath = '%%GLOBAL_ShopPath%%';
+	config.AppPath = '%%GLOBAL_AppPath%%';
+	config.FastCart = %%GLOBAL_FastCart%%;
+	var ThumbImageWidth = %%GLOBAL_ProductThumbImageWidth%%;
+	var ThumbImageHeight = %%GLOBAL_ProductThumbImageHeight%%;
+	//]]>
+	</script>
+	%%GLOBAL_AdditionalScriptTags%%
+	%%GLOBAL_QuickSearchJS%%
+	%%GLOBAL_RTLStyles%%
+</head>
